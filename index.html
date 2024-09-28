@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Single Player Battleship</title>
+        <link rel="stylesheet" href="/BlazorBattleship/SinglePlayer/styles/styles.css">
+    </head>
+
+    <body>
+        <button id="music-button" onclick="togglePlay()">
+            Music
+            <audio id="bg-music" src="/BlazorBattleship/SinglePlayer/audio/background-music.mp3" loop></audio>
+        </button>
+
+        <audio id="sunk-sound" src="/BlazorBattleship/SinglePlayer/audio/sunk.mp3"></audio>
+
+        <audio id="hit-sound" src="/BlazorBattleship/SinglePlayer/audio/hit.mp3"></audio>
+
+        <audio id="miss-sound" src="/BlazorBattleship/SinglePlayer/audio/miss.mp3"></audio>
+
+        <audio id="win-sound" src="/BlazorBattleship/SinglePlayer/audio/win_sound.wav"></audio>
+
+        <div id="game-info">
+            <p>Turn: <span id="turn-display"></span></p>
+            <p>Info: <span id="info"></span></p>
+            <!--
+            <div class="input-container">
+                <label for="ship-count">Enter the number of ships (1-5):</label>
+                <input type="number" id="ship-count" min="1" max="5" value="1">
+            </div>
+            -->
+            <div id="difficulty-info">
+                <p>Choose difficulty:</p>
+                <button id="easy-mode" class="difficulty-button">Easy</button>
+                <button id="medium-mode" class="difficulty-button">Medium</button>
+                <button id="hard-mode" class="difficulty-button">Hard</button>
+            </div>
+        </div>
+
+        <div id="gameboards-container"></div>
+
+        <div class="option-container">
+            <div id="0" class="ship1-preview ship1" draggable="true"></div>
+            <div id="1" class="ship2-preview ship2" draggable="true"></div>
+            <div id="2" class="ship3-preview ship3" draggable="true"></div>
+            <div id="3" class="ship4-preview ship4" draggable="true"></div>
+            <div id="4" class="ship5-preview ship5" draggable="true"></div>
+        </div>
+
+        <button id="flip-button">Switch to Vertical Placement</button>
+        <button id="start-button">Begin</button>
+
+        <script src="/BlazorBattleship/SinglePlayer/js/app.js"></script>
+    </body>
+</html>
