@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Single Player Battleship</title>
-        <link rel="stylesheet" href="/BlazorBattleship/SinglePlayer/styles/styles.css">
+        <link rel="stylesheet" href="/styles/styles.css">
     </head>
 
     <body>
         <button id="music-button" onclick="togglePlay()">
             Music
-            <audio id="bg-music" src="/BlazorBattleship/SinglePlayer/audio/background-music.mp3" loop></audio>
+            <audio id="bg-music" src="/audio/background-music.mp3" loop></audio>
         </button>
 
-        <audio id="sunk-sound" src="/BlazorBattleship/SinglePlayer/audio/sunk.mp3"></audio>
+        <audio id="sunk-sound" src="/audio/sunk.mp3"></audio>
 
-        <audio id="hit-sound" src="/BlazorBattleship/SinglePlayer/audio/hit.mp3"></audio>
+        <audio id="hit-sound" src="/audio/hit.mp3"></audio>
 
-        <audio id="miss-sound" src="/BlazorBattleship/SinglePlayer/audio/miss.mp3"></audio>
+        <audio id="miss-sound" src="/audio/miss.mp3"></audio>
 
-        <audio id="win-sound" src="/BlazorBattleship/SinglePlayer/audio/win_sound.wav"></audio>
+        <audio id="win-sound" src="/audio/win_sound.wav"></audio>
 
         <div id="game-info">
             <p>Turn: <span id="turn-display"></span></p>
@@ -50,6 +50,6 @@
         <button id="flip-button">Switch to Vertical Placement</button>
         <button id="start-button">Begin</button>
 
-        <script src="/BlazorBattleship/SinglePlayer/js/app.js"></script>
+        <script src="/js/app.js"></script>
     </body>
 </html>
